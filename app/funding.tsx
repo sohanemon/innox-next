@@ -12,7 +12,7 @@ export default function Funding() {
       </div>
 
       {/* first div */}
-      <div className='grid grid-cols-12'>
+      <div className='grid grid-cols-12 my-20'>
         <div className='space-y-5 col-span-5'>
           <Image
             src={`/assets/images/transition/money.svg`}
