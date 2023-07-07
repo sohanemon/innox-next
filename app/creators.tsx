@@ -2,15 +2,23 @@ import Image from 'next/image';
 
 export default function Creators() {
   return (
-    <section className='flex flex-col w-fit mx-auto my-20'>
-      <div className='text-center text-sky-950 text-[25px] font-bold capitalize leading-10'>
-        Trending Creators
-      </div>
-      <div className='h-1 w-full bg-gradient-to-r from-primary via-primary/70 to-transparent rounded-full' />
-      <div className='flex'>
+    <section>
+      <div className='flex flex-col w-fit mx-auto my-20'>
+        <div className='text-center text-sky-950 text-[25px] font-bold capitalize leading-10'>
+          Trending Creators
+        </div>
+        <div className='h-1 w-full bg-gradient-to-r from-primary via-primary/70 to-transparent rounded-full' />
+      </div>{' '}
+      <div className='flex justify-center'>
         {data.map((_) => (
           <div key={_.title}>
-            <Image src={_.value} alt='' width={100} height={100} />
+            <Image
+              src={_.photo}
+              alt=''
+              className='rounded-full'
+              width={85}
+              height={85}
+            />
           </div>
         ))}
       </div>
