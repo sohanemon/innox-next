@@ -9,3 +9,21 @@ export default function Creators() {
     </section>
   );
 }
+Crispin Berry
+Samson Frost
+Tommy Alvarez
+Windsor Lane
+Andy Hurlbutt
+Blake Banks
+Monica Lucas
+Matt Ramos
+Harper Wilcher
+214.2 ETH
+205.43 ETH
+170.3 ETH
+120.7 ETH
+82.79 ETH
+68.2 ETH
+52.8 ETH
+38.4 ETH
+29.2 ETH
