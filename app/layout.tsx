@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'Next | SohanEmon',
+  title: 'Innox',
 };
 
 export default function RootLayout({
