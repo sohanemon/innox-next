@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <section className='flex justify-between flex-wrap gap-10 mt-32 py-10 bg-white'>
+    <section className='flex flex-wrap justify-between gap-10 py-10 mt-32 bg-white'>
       <div className='space-y-4'>
         <Brand />
         <p className='text-neutral-800 text-[14px] font-normal leading-snug'>
@@ -28,7 +28,23 @@ export default function Footer() {
       {/* middle part */}
       <div>
         {data.map((_) => (
-          <div key={_.title}></div>
+          <div key={_.title}>
+            <p className=' text-neutral-800 text-[15px] font-bold capitalize leading-relaxed'>
+              Resources
+            </p>
+            {_.sub.map((__) => (
+              <Link
+                className='text-neutral-800
+text-[14px]
+font-normal
+leading-snug'
+                href={__}
+                key={__}
+              >
+                {__}
+              </Link>
+            ))}
+          </div>
         ))}
       </div>
     </section>
