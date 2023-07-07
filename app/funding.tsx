@@ -12,8 +12,8 @@ export default function Funding() {
       </div>
 
       {/* first div */}
-      <div className='grid grid-cols-2'>
-        <div className='space-y-5'>
+      <div className='grid grid-cols-12'>
+        <div className='space-y-5 col-span-5'>
           <Image
             src={`/assets/images/transition/money.svg`}
             alt=''
@@ -55,7 +55,7 @@ export default function Funding() {
             Apply
           </button>
         </div>
-        <div className='flex -space-x-16 justify-end'>
+        <div className='flex -space-x-12 justify-center  col-span-7'>
           <Image
             src={`/assets/images/card.svg`}
             alt=''
@@ -65,6 +65,7 @@ export default function Funding() {
           <Image
             src={`/assets/images/funding.svg`}
             alt=''
+            className='translate-y-16'
             width={160}
             height={300}
           />
