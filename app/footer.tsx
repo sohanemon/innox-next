@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <section className='flex justify-between flex-wrap gap-10'>
+    <section className='flex justify-between flex-wrap gap-10 mt-32 py-10 bg-white'>
       <div className='space-y-4'>
         <Brand />
         <p className='text-neutral-800 text-[14px] font-normal leading-snug'>
@@ -28,3 +28,16 @@ export default function Footer() {
     </section>
   );
 }
+
+
+const data = [
+
+
+    title: 'My Account ', sub: []
+    title: 'Resources ', sub: []
+    title: 'Company ', sub: []
+    title: 'Subscribe ', sub: []
+
+]
+
+
