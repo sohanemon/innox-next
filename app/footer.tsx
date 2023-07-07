@@ -25,19 +25,27 @@ export default function Footer() {
           ))}
         </div>
       </div>
+      {/* middle part */}
+      <div>
+        {data.map((_) => (
+          <div key={_.title}></div>
+        ))}
+      </div>
     </section>
   );
 }
 
-
 const data = [
-
-
-    title: 'My Account ', sub: []
-    title: 'Resources ', sub: []
-    title: 'Company ', sub: []
-    title: 'Subscribe ', sub: []
-
-]
-
-
+  {
+    title: 'My Account ',
+    sub: ['Authors', 'Collection', 'Author Profile', 'Create Collection'],
+  },
+  {
+    title: 'Resources ',
+    sub: ['Help & Support', 'Live Auctions', 'Item Details', 'Activity'],
+  },
+  {
+    title: 'Company ',
+    sub: ['About Us', 'Contact Us', 'Our Blog', 'Discover'],
+  },
+];
