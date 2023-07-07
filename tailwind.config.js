@@ -1,4 +1,3 @@
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
@@ -12,8 +11,11 @@ module.exports = {
       },
     },
     extend: {
+      transitionDuration: {
+        long: '2s',
+      },
       fontFamily: {
-        poppins: 'var(--poppins)'
+        poppins: 'var(--poppins)',
       },
       colors: {
         border: 'hsl(var(--border))',

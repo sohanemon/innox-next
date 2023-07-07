@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Brand() {
   return (
-    <Link href={'/'}>
+    <Link href={'/'} className='flex items-center gap-3'>
       <Image
         src={'/assets/images/logo.svg'}
         alt='logo'
