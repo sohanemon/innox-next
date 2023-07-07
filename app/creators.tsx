@@ -9,16 +9,22 @@ export default function Creators() {
         </div>
         <div className='h-1 w-full bg-gradient-to-r from-primary via-primary/70 to-transparent rounded-full' />
       </div>{' '}
-      <div className='flex justify-center'>
+      <div className='flex justify-center gap-8 flex-wrap'>
         {data.map((_) => (
           <div key={_.title}>
             <Image
               src={_.photo}
               alt=''
-              className='rounded-full'
+              className='rounded-full mb-3'
               width={85}
               height={85}
             />
+            <p className='text-center mb-1 text-zinc-800 text-[12px] font-bold capitalize leading-relaxed'>
+              {_.title}
+            </p>
+            <p className='text-center text-sky-600 text-[12px] font-bold leading-snug'>
+              {_.value}
+            </p>
           </div>
         ))}
       </div>
