@@ -1,3 +1,4 @@
+import Muted from '@/components/ui/muted';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
@@ -24,12 +25,25 @@ export default function Working() {
         </h3>
       </ul>
       {/* transition grid */}
-      <div className='gric grid-cols-4 mb-20'>
+      <div className='flex justify-center my-20 gap-4'>
         {data.map((_) => (
-          <div key={_.title}>
-            <div>
+          <div key={_.title} className='max-w-xs'>
+            <div className='flex gap-2'>
               <Image src={_.icon} alt='' width={38} height={30} />{' '}
+              {_.transitionIcon && (
+                <Image
+                  src={_.transitionIcon}
+                  className='w-full grow mx-6 block'
+                  alt=''
+                  width={220}
+                  height={60}
+                />
+              )}
             </div>
+            <div className=' text-slate-700 my-2.5 text-[15px] font-medium'>
+              {_.title}
+            </div>
+            <Muted>{_.node}</Muted>
           </div>
         ))}
       </div>
@@ -39,8 +53,8 @@ export default function Working() {
 
 const data = [
   {
-    icon: '/public/assets/images/transition/mail.svg',
-    transitionIcon: '/public/assets/images/dash-up.svg',
+    icon: '/assets/images/transition/mail.svg',
+    transitionIcon: '/assets/images/dash-up.svg',
     title: 'Set up your wallet',
     node: (
       <>
@@ -50,34 +64,36 @@ const data = [
     ),
   },
   {
-    icon: '/public/assets/images/transition/mail.svg',
-    transitionIcon: '/public/assets/images/dash-up.svg',
-    title: 'Set up your wallet',
+    icon: '/assets/images/transition/verify.svg',
+    transitionIcon: '/assets/images/dash-down.svg',
+    title: 'Verify channel ',
     node: (
       <>
-        Create an account as a “content creator” by{' '}
-        <span className='text-sky-600 '>connecting your wallet</span>
+        Verify your channel exists within our ecosystem so we can{' '}
+        <span className='text-sky-600 '>issue the valuation </span>
+        of your token{' '}
       </>
     ),
   },
   {
-    icon: '/public/assets/images/transition/mail.svg',
-    transitionIcon: '/public/assets/images/dash-up.svg',
-    title: 'Set up your wallet',
+    icon: '/assets/images/transition/brush.svg',
+    transitionIcon: '/assets/images/dash-up.svg',
+    title: 'Personalize Token',
     node: (
       <>
-        Create an account as a “content creator” by{' '}
-        <span className='text-sky-600 '>connecting your wallet</span>
+        Personalize your token based on your preferences and creative touch in
+        order to <span className='text-sky-600 '>stand out from the rest </span>
       </>
     ),
   },
   {
-    icon: '/public/assets/images/transition/mail.svg',
-    title: 'Set up your wallet',
+    icon: '/assets/images/transition/bag.svg',
+    title: 'List in Marketplace',
     node: (
       <>
-        Create an account as a “content creator” by{' '}
-        <span className='text-sky-600 '>connecting your wallet</span>
+        When you are ready to publish your token{' '}
+        <span className='text-sky-600 '>publish to marketplace</span> and share
+        with your audience.
       </>
     ),
   },
