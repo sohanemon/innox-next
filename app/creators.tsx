@@ -5,7 +5,7 @@ export default function Creators() {
         Trending Creators
       </div>
       <div className='h-1 w-full bg-gradient-to-r from-primary via-primary/70 to-transparent rounded-full' />
-      <div></div>
+      <div className='flex'></div>
     </section>
   );
 }
