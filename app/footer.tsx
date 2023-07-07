@@ -26,18 +26,15 @@ export default function Footer() {
         </div>
       </div>
       {/* middle part */}
-      <div>
+      <div className='flex flex-wrap gap-12 '>
         {data.map((_) => (
           <div key={_.title}>
-            <p className=' text-neutral-800 text-[15px] font-bold capitalize leading-relaxed'>
-              Resources
+            <p className=' pb-1 text-neutral-800 text-[15px] font-bold capitalize leading-relaxed'>
+              {_.title}
             </p>
             {_.sub.map((__) => (
               <Link
-                className='text-neutral-800
-text-[14px]
-font-normal
-leading-snug'
+                className='text-neutral-800 py-1.5 block text-[14px] font-normal leading-snug'
                 href={__}
                 key={__}
               >
@@ -46,6 +43,21 @@ leading-snug'
             ))}
           </div>
         ))}
+      </div>
+      <div className='max-w-xs'>
+        <p className=' pb-1 text-neutral-800 text-[15px] font-bold capitalize leading-relaxed'>
+          Subscribe
+        </p>{' '}
+        <Link
+          className='text-neutral-800 py-1.5 block text-[14px] font-normal leading-snug'
+          href={'/'}
+        >
+          Signup for our newsletter to get the latest news in your inbox.
+        </Link>
+        <div>
+          <input type='text' placeholder='Info@yourgmail.com' />
+          <button></button>
+        </div>
       </div>
     </section>
   );
