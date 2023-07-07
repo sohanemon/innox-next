@@ -25,8 +25,24 @@ export default function Working() {
       </ul>
       {/* transition grid */}
       <div className='gric grid-cols-4 mb-20'>
-        <div></div>
+        <div>
+          <div></div>
+        </div>
       </div>
     </section>
   );
 }
+
+const data = [
+  {
+    icon: '/public/assets/images/transition/mail.svg',
+    transitionIcon: '/public/assets/images/dash-up.svg',
+    title: 'Set up your wallet',
+    node: (
+      <>
+        Create an account as a “content creator” by{' '}
+        <span className='text-sky-600 '>connecting your wallet</span>
+      </>
+    ),
+  },
+];
