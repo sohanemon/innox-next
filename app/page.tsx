@@ -4,7 +4,7 @@ import Working from './working';
 
 export default function Home() {
   return (
-    <main className=''>
+    <main className='container'>
       <Hero />
       <Working />
       <Funding />

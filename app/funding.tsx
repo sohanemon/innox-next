@@ -1,8 +1,9 @@
+import Muted from '@/components/ui/muted';
 import Image from 'next/image';
 
 export default function Funding() {
   return (
-    <section className='container'>
+    <section className=''>
       <div className='text-center'>
         <span className='text-slate-700 text-[25px] font-bold'>
           Direct Funding <br />
@@ -12,7 +13,7 @@ export default function Funding() {
 
       {/* first div */}
       <div className='grid grid-cols-2'>
-        <div>
+        <div className='space-y-5'>
           <Image
             src={`/assets/images/transition/money.svg`}
             alt=''
@@ -22,6 +23,51 @@ export default function Funding() {
           <p className=' text-slate-700 text-[20px] font-medium'>
             Channel Funding{' '}
           </p>
+          <Muted className='text-[12px] font-medium'>
+            <span>We believe in the </span>
+            <span className='text-sky-600'>power of collaboration</span>
+            <span>
+              {' '}
+              and recognize the immense talent and potential of content creators
+              across various platforms.
+              <br /> <br />
+              By investing in a content creators channel,{' '}
+            </span>
+            <span className='text-sky-600'>
+              you become an integral part of their growth story.
+            </span>
+            <span>
+              {' '}
+              <br />
+              <br />
+              Your investment provides the{' '}
+            </span>
+            <span className='text-sky-600'>
+              necessary resources for creators to enhance
+            </span>
+            <span>
+              {' '}
+              their production quality, expand their audience reach, and explore
+              new creative avenues.{' '}
+            </span>
+          </Muted>
+          <button className='text-sm text-white rounded-lg hover:shadow-lg transition-all  font-medium bg-primary to-secondary px-6 py-2'>
+            Apply
+          </button>
+        </div>
+        <div>
+          <Image
+            src={`/public/assets/images/`}
+            alt=''
+            width={100}
+            height={100}
+          />
+          <Image
+            src={`/assets/images/funding.svg`}
+            alt=''
+            width={100}
+            height={100}
+          />
         </div>
       </div>
     </section>

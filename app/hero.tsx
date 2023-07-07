@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className='container py-24 grid grid-cols-7 items-center'>
+    <section className=' py-24 grid grid-cols-7 items-center'>
       <div className='pl-20 space-y-10 col-span-3 relative '>
         <h1 className='max-w-[344px]  text-[40px] font-bold'>
           <span className='text-slate-700 '>
