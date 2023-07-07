@@ -1,3 +1,4 @@
+import Creators from './creators';
 import Funding from './funding';
 import Hero from './hero';
 import Working from './working';
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Working />
       <Funding />
+      <Creators />
     </main>
   );
 }
