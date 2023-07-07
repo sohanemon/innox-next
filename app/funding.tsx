@@ -55,18 +55,18 @@ export default function Funding() {
             Apply
           </button>
         </div>
-        <div>
+        <div className='flex -space-x-16 justify-end'>
           <Image
-            src={`/public/assets/images/`}
+            src={`/assets/images/card.svg`}
             alt=''
-            width={100}
-            height={100}
+            width={340}
+            height={340}
           />
           <Image
             src={`/assets/images/funding.svg`}
             alt=''
-            width={100}
-            height={100}
+            width={160}
+            height={300}
           />
         </div>
       </div>
