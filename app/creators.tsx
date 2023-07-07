@@ -10,13 +10,49 @@ export default function Creators() {
   );
 }
 const data = [
-  { title: 'Crispin Berry', value: '214.2 ETH' },
-  { title: 'Samson Frost', value: '205.43 ETH' },
-  { title: 'Tommy Alvarez', value: '170.3 ETH' },
-  { title: 'Windsor Lane', value: '120.7 ETH' },
-  { title: 'Andy Hurlbutt', value: '82.79 ETH' },
-  { title: 'Blake Banks', value: '68.2 ETH' },
-  { title: 'Monica Lucas', value: '52.8 ETH' },
-  { title: 'Matt Ramos', value: '38.4 ETH' },
-  { title: 'Harper Wilcher', value: '29.2 ETH' },
+  {
+    photo: '/public/assets/images/avt/avt1.svg',
+    title: 'Crispin Berry',
+    value: '214.2 ETH',
+  },
+  {
+    photo: '/public/assets/images/avt/avt2.svg',
+    title: 'Samson Frost',
+    value: '205.43 ETH',
+  },
+  {
+    photo: '/public/assets/images/avt/avt3.svg',
+    title: 'Tommy Alvarez',
+    value: '170.3 ETH',
+  },
+  {
+    photo: '/public/assets/images/avt/avt4.svg',
+    title: 'Windsor Lane',
+    value: '120.7 ETH',
+  },
+  {
+    photo: '/public/assets/images/avt/avt5.svg',
+    title: 'Andy Hurlbutt',
+    value: '82.79 ETH',
+  },
+  {
+    photo: '/public/assets/images/avt/avt6.svg',
+    title: 'Blake Banks',
+    value: '68.2 ETH',
+  },
+  {
+    photo: '/public/assets/images/avt/avt7.svg',
+    title: 'Monica Lucas',
+    value: '52.8 ETH',
+  },
+  {
+    photo: '/public/assets/images/avt/avt1.svg',
+    title: 'Matt Ramos',
+    value: '38.4 ETH',
+  },
+  {
+    photo: '/public/assets/images/avt/avt2.svg',
+    title: 'Harper Wilcher',
+    value: '29.2 ETH',
+  },
 ];
