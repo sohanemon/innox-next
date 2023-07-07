@@ -9,12 +9,14 @@ export default function Creators() {
     </section>
   );
 }
-Crispin Berry 214.2 ETH
-Samson Frost 205.43 ETH
-Tommy Alvarez 170.3 ETH
-Windsor Lane 120.7 ETH
-Andy Hurlbutt 82.79 ETH
-Blake Banks 68.2 ETH
-Monica Lucas 52.8 ETH
-Matt Ramos 38.4 ETH
-Harper Wilcher 29.2 ETH
+const data = [
+  { title: 'Crispin Berry', value: '214.2 ETH' },
+  { title: 'Samson Frost', value: '205.43 ETH' },
+  { title: 'Tommy Alvarez', value: '170.3 ETH' },
+  { title: 'Windsor Lane', value: '120.7 ETH' },
+  { title: 'Andy Hurlbutt', value: '82.79 ETH' },
+  { title: 'Blake Banks', value: '68.2 ETH' },
+  { title: 'Monica Lucas', value: '52.8 ETH' },
+  { title: 'Matt Ramos', value: '38.4 ETH' },
+  { title: 'Harper Wilcher', value: '29.2 ETH' },
+];
