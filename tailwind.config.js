@@ -14,6 +14,9 @@ module.exports = {
       transitionDuration: {
         long: '2s',
       },
+      animation: {
+        rocket: 'rocket 45s ease 9999',
+      },
       fontFamily: {
         poppins: 'var(--poppins)',
       },

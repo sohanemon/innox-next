@@ -36,7 +36,7 @@
 @keyframes rocket {
   0%,
   100% {
-    transform: translate(30px, -35px);
+    transform: translate(4px, -35px);
   }
   50% {
     transform: translate(0, 0);
