@@ -1,11 +1,11 @@
 'use client';
 
+import { cn } from '@/lib/utils';
 import { AlignJustify, X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import Brand from './ui/brand';
-import Image from 'next/image';
-import { cn } from '@/lib/utils';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ const NavContent = () => {
           <li key={_}>
             <h3
               className={cn(
-                'capitalize  from-primary to-transparent text-sm pb-2.5 ',
+                'capitalize  from-primary via-primary/70 to-transparent text-sm pb-2.5 ',
                 {
                   'bg-gradient-to-r': _ === 'home',
                 }

@@ -11,14 +11,14 @@ export default function Working() {
       <ul className='flex justify-center gap-10 my-4'>
         <h3
           className={cn(
-            'capitalize  from-primary to-transparent text-sm pb-1 bg-gradient-to-r'
+            'capitalize  from-primary via-primary/70 to-transparent text-sm pb-1 bg-gradient-to-r'
           )}
         >
           <p className='bg-white pb-2'>For Creator</p>
         </h3>
         <h3
           className={cn(
-            'capitalize  from-primary to-transparent text-sm pb-1 bg-gradient-to-r'
+            'capitalize  from-primary via-primary/70 to-transparent text-sm pb-1 bg-gradient-to-r'
           )}
         >
           <p className='bg-white pb-2'>For Creator</p>
