@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Div1() {
   return (
     <div className='grid grid-cols-12 my-20'>
-      <div className='space-y-5 col-span-5'>
+      <div className='space-y-5 col-span-full md:col-span-5'>
         <Image
           src={`/assets/images/transition/money.svg`}
           alt=''
@@ -42,11 +42,11 @@ export default function Div1() {
             new creative avenues.{' '}
           </span>
         </Muted>
-        <button className='text-sm text-white rounded-lg hover:shadow-lg transition-all  font-medium bg-primary to-secondary px-6 py-2'>
+        <button className='px-6 py-2 text-sm font-medium text-white transition-all rounded-lg hover:shadow-lg bg-primary to-secondary'>
           Apply
         </button>
       </div>
-      <div className='flex -space-x-12 justify-center  col-span-7'>
+      <div className='flex justify-center -space-x-12 col-span-full md:col-span-7'>
         <Image
           src={`/assets/images/card.svg`}
           alt=''

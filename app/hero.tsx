@@ -50,7 +50,7 @@ export default function Hero() {
         <div className='flex gap-10'>
           {stat.map((el) => (
             <div key={el.title}>
-              <p className=' text-secondary text-[25px] font-bold whitespace-nowrap'>
+              <p className=' text-secondary text-xl md:text-[25px] font-bold whitespace-nowrap'>
                 {el.amount}
               </p>
               <Muted>{el.title}</Muted>

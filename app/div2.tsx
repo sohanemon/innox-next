@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Div2() {
   return (
     <div className='grid grid-cols-12 my-20'>
-      <div className='flex -space-x-16  col-span-7'>
+      <div className='flex -space-x-16 col-span-full md:col-span-7'>
         <Image
           src={`/assets/images/mr-beast.svg`}
           alt=''
@@ -19,7 +19,7 @@ export default function Div2() {
           height={300}
         />
       </div>
-      <div className='space-y-5 col-span-5'>
+      <div className='space-y-5 col-span-full max-md:order-first max-md:mb-10 md:col-span-5'>
         <Image
           src={`/assets/images/transition/money.svg`}
           alt=''
@@ -50,7 +50,7 @@ export default function Div2() {
           <span className='text-sky-600'>captivate audiences</span>
           <span> around the world.</span>
         </div>
-        <button className='text-sm text-white rounded-lg hover:shadow-lg transition-all  font-medium bg-primary to-secondary px-6 py-2'>
+        <button className='px-6 py-2 text-sm font-medium text-white transition-all rounded-lg hover:shadow-lg bg-primary to-secondary'>
           Learn More
         </button>
       </div>
