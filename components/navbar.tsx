@@ -49,9 +49,9 @@ const NavContent = () => {
                 <div className='absolute w-full h-1 rounded-full -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
               ) : null}
 
-              <Link className='' href={_.href}>
+              <a className='' href={_.href}>
                 {_.name}
-              </Link>
+              </a>
             </div>
           </li>
         ))}
