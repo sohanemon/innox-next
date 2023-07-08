@@ -6,7 +6,7 @@ import Working from './working';
 
 export default function Home() {
   return (
-    <main className='container'>
+    <main className='container [&>*]:relative'>
       <Hero />
       <Working />
       <Funding />
