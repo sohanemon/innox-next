@@ -8,15 +8,15 @@ export default function Div2() {
         <Image
           src={`/assets/images/mr-beast.svg`}
           alt=''
-          width={300}
-          height={320}
+          width={350}
+          height={400}
         />
         <Image
           src={`/assets/images/top-raised.svg`}
           alt=''
           className='translate-y-24'
-          width={160}
-          height={300}
+          width={180}
+          height={330}
         />
       </div>
       <div className='space-y-5 col-span-full max-md:order-first max-md:mb-10 md:col-span-5'>
