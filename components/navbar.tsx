@@ -38,7 +38,6 @@ export default function Navbar() {
 
 const NavContent = () => {
   const pathname = usePathname();
-  console.log('🛑 ~ NavContent ~ pathname:', pathname);
 
   return (
     <>
