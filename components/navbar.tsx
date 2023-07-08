@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import Brand from './ui/brand';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,16 +37,20 @@ export default function Navbar() {
 }
 
 const NavContent = () => {
+  const pathname = usePathname();
+  console.log('🛑 ~ NavContent ~ pathname:', pathname.replace('%20', ' '));
+
   return (
     <>
       <ul className='flex items-center gap-[15%] font-medium whitespace-nowrap max-lg:hidden '>
         {nav.map((_) => (
           <li key={_}>
             <div className={cn('capitalize relative')}>
-              {_ === 'home' && (
-                <div className='absolute w-full h-1 rounded-full -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
-              )}
-              <Link className='' href={_}>
+              {(_ === 'home' && pathname === '/') ||
+                (pathname.replaceAll('%20', ' ').includes(_) && (
+                  <div className='absolute w-full h-1 rounded-full -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
+                ))}
+              <Link className='' as={_ === 'home' ? '/' : ''} href={_}>
                 {_}
               </Link>
             </div>
@@ -72,7 +77,7 @@ const NavContentMob = ({ setIsMenuOpen }: { setIsMenuOpen: Function }) => {
   );
 };
 
-const nav = ['home', 'How it works', 'Marketplace', 'About'];
+const nav = ['home', 'how it works', 'marketplace', 'about'];
 
 const Action = () => {
   return (
