@@ -9,25 +9,18 @@ export default function Working() {
         How it works?
       </p>
       <ul className='flex justify-center gap-10 my-4'>
-        <h3
-          className={cn(
-            'capitalize  from-primary cursor-progress via-primary/70 to-transparent text-sm pb-1 bg-gradient-to-r'
-          )}
-        >
-          <p className='pb-2 bg-white'>For Creator</p>
-        </h3>
-        <h3
-          className={cn(
-            'capitalize  from-primary cursor-progress via-primary/70 to-transparent text-sm pb-1  '
-          )}
-        >
-          <p className='pb-2 bg-white'>For Users</p>
-        </h3>
+        <div className={cn('capitalize  text-sm pb-1 relative')}>
+          <div className='absolute w-full h-1 rounded-full -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
+          <p className=''>For Creator</p>
+        </div>
+        <div className={cn('capitalize  text-sm pb-1  relative')}>
+          <p className=''>For Users</p>
+        </div>
       </ul>
       {/* transition grid */}
-      <div className='flex justify-center gap-4 my-20'>
+      <div className='flex flex-wrap justify-center gap-4 my-20'>
         {data.map((_) => (
-          <div key={_.title} className='max-w-xs'>
+          <div key={_.title} className='max-w-[280px]'>
             <div className='flex gap-2'>
               <Image src={_.icon} alt='' width={38} height={30} />{' '}
               {_.transitionIcon && (

@@ -7,7 +7,7 @@ export default function Hero() {
     <section className='grid items-center grid-cols-7 py-24 '>
       <BlurryDiv className='right-0 -top-32' />
       <BlurryDiv className='bottom-0 left-0' />
-      <div className='relative col-span-3 pl-20 space-y-10 '>
+      <div className='relative col-span-3 space-y-10 max-md:col-span-full lg:pl-20 '>
         <h1 className='max-w-[344px]  text-[40px] font-bold'>
           <span className='text-slate-700 '>
             Invest and grow
@@ -20,7 +20,7 @@ export default function Hero() {
           <span className='text-slate-700 '>creators</span>
         </h1>
         <Image
-          className='absolute duration-1000 w-52 h-52 -right-24 top-6 animate-in slide-in-from-left-4 slide-in-from-top-2'
+          className='absolute duration-1000 w-52 h-52 max-md:hidden -right-24 top-6 animate-in slide-in-from-left-4 slide-in-from-top-2'
           src={`/assets/images/arrow.svg`}
           alt=''
           width={200}
@@ -59,14 +59,14 @@ export default function Hero() {
         </div>
       </div>
       <Image
-        className='col-span-2 transition-all duration-1000 translate-x-20 select-none hover:drop-shadow-2xl '
+        className='col-span-2 transition-all duration-1000 select-none max-md:mt-10 md:translate-x-20 max-md:col-span-4 hover:drop-shadow-2xl '
         src={`/assets/images/hero.svg`}
         alt=''
         width={238}
         height={283}
       />
       <Image
-        className='col-span-2 transition-all duration-1000 translate-x-20 select-none hover:drop-shadow-2xl '
+        className='col-span-2 transition-all duration-1000 select-none max-md:mt-10 md:translate-x-20 max-md:col-span-3 hover:drop-shadow-2xl '
         src={`/assets/images/hero-alt.svg`}
         alt=''
         width={238}

@@ -38,7 +38,7 @@ export default function Navbar() {
 
 const NavContent = () => {
   const pathname = usePathname();
-  console.log('🛑 ~ NavContent ~ pathname:', pathname.replace('%20', ' '));
+  console.log('🛑 ~ NavContent ~ pathname:', pathname);
 
   return (
     <>
@@ -47,9 +47,9 @@ const NavContent = () => {
           <li key={_}>
             <div className={cn('capitalize relative')}>
               {(_ === 'home' && pathname === '/') ||
-                (pathname.replaceAll('%20', ' ').includes(_) && (
-                  <div className='absolute w-full h-1 rounded-full -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
-                ))}
+              pathname.replaceAll('%20', ' ').includes(_) ? (
+                <div className='absolute w-full h-1 rounded-full -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
+              ) : null}
               <Link className='' as={_ === 'home' ? '/' : ''} href={_}>
                 {_}
               </Link>
@@ -64,7 +64,7 @@ const NavContent = () => {
 const NavContentMob = ({ setIsMenuOpen }: { setIsMenuOpen: Function }) => {
   return (
     <>
-      <ul className='absolute inset-x-0 flex flex-col items-start font-medium lg:hidden'>
+      <ul className='container absolute inset-x-0 flex flex-col items-start font-medium lg:hidden'>
         {nav.map((_) => (
           <li onClick={() => setIsMenuOpen(false)} key={_}>
             <h3 className='capitalize'>
