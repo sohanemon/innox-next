@@ -7,7 +7,7 @@ export default function Hero() {
     <section className='grid items-center grid-cols-7 py-24 '>
       <BlurryDiv className='right-0 -top-32' />
       <BlurryDiv className='bottom-0 left-0' />
-      <div className='relative col-span-3 space-y-10 max-md:col-span-full lg:pl-20 '>
+      <div className='relative col-span-3 space-y-10 duration-1000 animate-in slide-in-from-left-32 fade-in-0 max-md:col-span-full lg:pl-20 '>
         <h1 className='max-w-[344px]  text-[40px] font-bold'>
           <span className='text-slate-700 '>
             Invest and grow
@@ -59,14 +59,14 @@ export default function Hero() {
         </div>
       </div>
       <Image
-        className='col-span-2 transition-all duration-1000 select-none max-md:mt-10 md:translate-x-20 max-md:col-span-4 hover:drop-shadow-2xl '
+        className='col-span-2 transition-all duration-1000 select-none animate-in slide-in-from-bottom-10 slide-in-from-right-20 fade-in-0 max-md:mt-10 md:translate-x-20 max-md:col-span-4 hover:drop-shadow-2xl '
         src={`/assets/images/hero.svg`}
         alt=''
         width={238}
         height={283}
       />
       <Image
-        className='col-span-2 transition-all duration-1000 select-none max-md:mt-10 md:translate-x-20 max-md:col-span-3 hover:drop-shadow-2xl '
+        className='col-span-2 transition-all duration-1000 select-none animate-in slide-in-from-right-28 fade-in-0 max-md:mt-10 md:translate-x-20 max-md:col-span-3 hover:drop-shadow-2xl '
         src={`/assets/images/hero-alt.svg`}
         alt=''
         width={238}
