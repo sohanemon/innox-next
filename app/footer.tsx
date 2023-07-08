@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <section className='flex flex-wrap justify-between gap-10 py-10 px-3 mt-32 bg-[#f8f8f8]'>
+    <section className='container flex flex-wrap justify-between gap-10 px-3 py-10 mt-32'>
       <div className='space-y-4'>
         <Brand />
         <p className='text-neutral-800 text-[14px] font-normal leading-snug'>
@@ -58,7 +58,7 @@ export default function Footer() {
           <input
             type='email'
             placeholder='Info@yourgmail.com'
-            className='h-8 pl-3 outline-none'
+            className='h-8 pl-3 outline-none max-[280px]:w-36'
           />
           <button className='flex h-full px-2 bg-secondary '>
             <svg
