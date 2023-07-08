@@ -48,10 +48,9 @@ const NavContent = () => {
               {pathname.includes(_.href) ? (
                 <div className='absolute w-full h-1 rounded-full -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
               ) : null}
-
-              <a className='' href={_.href}>
+              <Link className='' href={_.href}>
                 {_.name}
-              </a>
+              </Link>
             </div>
           </li>
         ))}
@@ -78,7 +77,7 @@ const NavContentMob = ({ setIsMenuOpen }: { setIsMenuOpen: Function }) => {
 
 const nav = [
   { name: 'home', href: '/' },
-  { name: 'how it works', href: '#how-it-works' },
+  { name: 'how it works', href: '/#how-it-works' },
   { name: 'marketplace', href: '/marketplace' },
   { name: 'about', href: '/about' },
 ];

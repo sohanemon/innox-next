@@ -8,6 +8,13 @@ export default function Working() {
   const [isUser, setIsUser] = useState(false);
   return (
     <section id='how-it-works' className='scroll-m-20'>
+      <style global jsx>
+        {`
+          html {
+            scroll-behavior: smooth;
+          }
+        `}
+      </style>
       <p className='min-w-[282px] text-center text-slate-700 text-[25px] font-bold'>
         How it works?
       </p>
