@@ -59,14 +59,14 @@ export default function Hero() {
         </div>
       </div>
       <Image
-        className='col-span-2 transition-all duration-1000 select-none animate-in slide-in-from-bottom-10 slide-in-from-right-20 fade-in-0 max-md:mt-10 md:translate-x-20 max-md:col-span-4 hover:drop-shadow-2xl '
+        className='col-span-2 transition-all duration-1000 select-none animate-in slide-in-from-bottom-10 slide-in-from-right-20 fade-in-0 max-md:mt-10 md:translate-x-28 max-md:col-span-4 hover:drop-shadow-2xl '
         src={`/assets/images/hero.svg`}
         alt=''
-        width={238}
-        height={283}
+        width={280}
+        height={303}
       />
       <Image
-        className='col-span-2 transition-all duration-1000 select-none animate-in slide-in-from-right-28 fade-in-0 max-md:mt-10 md:translate-x-20 max-md:col-span-3 hover:drop-shadow-2xl '
+        className='col-span-2 transition-all duration-1000 select-none animate-in slide-in-from-right-28 fade-in-0 max-md:mt-10 md:translate-x-28 md:translate-y-20 max-md:col-span-3 hover:drop-shadow-2xl '
         src={`/assets/images/hero-alt.svg`}
         alt=''
         width={238}
