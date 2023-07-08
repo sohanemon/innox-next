@@ -43,14 +43,14 @@ const NavContent = () => {
     <>
       <ul className='flex items-center gap-[15%] font-medium whitespace-nowrap max-lg:hidden '>
         {nav.map((_) => (
-          <li key={_}>
+          <li key={_.name}>
             <div className={cn('capitalize relative')}>
-              {(_ === 'home' && pathname === '/') ||
-              pathname.replaceAll('%20', ' ').includes(_) ? (
+              {pathname.includes(_.href) ? (
                 <div className='absolute w-full h-1 rounded-full -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
               ) : null}
-              <Link className='' as={_ === 'home' ? '/' : ''} href={_}>
-                {_}
+
+              <Link className='' href={_.href}>
+                {_.name}
               </Link>
             </div>
           </li>
@@ -65,9 +65,9 @@ const NavContentMob = ({ setIsMenuOpen }: { setIsMenuOpen: Function }) => {
     <>
       <ul className='container absolute inset-x-0 flex flex-col items-start font-medium lg:hidden'>
         {nav.map((_) => (
-          <li onClick={() => setIsMenuOpen(false)} key={_}>
+          <li onClick={() => setIsMenuOpen(false)} key={_.name}>
             <h3 className='capitalize'>
-              <Link href={_}>{_}</Link>
+              <Link href={_.href}>{_.name}</Link>
             </h3>
           </li>
         ))}
@@ -76,7 +76,12 @@ const NavContentMob = ({ setIsMenuOpen }: { setIsMenuOpen: Function }) => {
   );
 };
 
-const nav = ['home', 'how it works', 'marketplace', 'about'];
+const nav = [
+  { name: 'home', href: '/' },
+  { name: 'how it works', href: '#how-it-works' },
+  { name: 'marketplace', href: '/marketplace' },
+  { name: 'about', href: '/about' },
+];
 
 const Action = () => {
   return (

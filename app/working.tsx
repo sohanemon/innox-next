@@ -7,7 +7,7 @@ import { useState } from 'react';
 export default function Working() {
   const [isUser, setIsUser] = useState(false);
   return (
-    <section>
+    <section id='how-it-works'>
       <p className='min-w-[282px] text-center text-slate-700 text-[25px] font-bold'>
         How it works?
       </p>
@@ -37,7 +37,9 @@ export default function Working() {
         {(!isUser ? data.slice(0, 4) : data.slice(4)).map((_) => (
           <div
             key={_.title}
-            className='max-w-[280px] animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16'
+            className={cn(
+              'max-w-[17.5rem] animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16'
+            )}
           >
             <div className='flex gap-2'>
               <Image src={_.icon} alt='' width={38} height={30} />{' '}
