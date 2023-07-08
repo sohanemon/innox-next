@@ -3,11 +3,13 @@ import Muted from '@/components/ui/muted';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 export default function Working() {
   const [isUser, setIsUser] = useState(false);
+  const { ref, inView } = useInView({ triggerOnce: true });
   return (
-    <section id='how-it-works' className='scroll-m-20'>
+    <section ref={ref} id='how-it-works' className={cn('scroll-m-20', {}: inView)}>
       <style global jsx>
         {`
           html {
