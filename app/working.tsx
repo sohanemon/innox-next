@@ -7,7 +7,7 @@ import { useState } from 'react';
 export default function Working() {
   const [isUser, setIsUser] = useState(false);
   return (
-    <section id='how-it-works'>
+    <section id='how-it-works' className='scroll-m-20'>
       <p className='min-w-[282px] text-center text-slate-700 text-[25px] font-bold'>
         How it works?
       </p>
