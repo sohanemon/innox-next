@@ -11,7 +11,7 @@ export default function BlurryDiv({
     <div
       {...props}
       className={cn(
-        'bg-primary w-96 h-96  absolute -z-50 rounded-full blur-[15rem] animate-rocket',
+        'bg-primary w-96 h-96  absolute -z-50 rounded-full blur-[18rem] animate-rocket',
         {},
         className
       )}
