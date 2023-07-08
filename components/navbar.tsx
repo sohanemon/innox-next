@@ -11,7 +11,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <section>
-      <nav className='flex items-center justify-between container mt-8'>
+      <nav className='container flex items-center justify-between mt-8'>
         <Brand />
         <NavContent />
         <Action />
@@ -41,18 +41,14 @@ const NavContent = () => {
       <ul className='flex items-center gap-[15%] font-medium whitespace-nowrap max-lg:hidden '>
         {nav.map((_) => (
           <li key={_}>
-            <h3
-              className={cn(
-                'capitalize  from-primary via-primary/70 to-transparent text-sm pb-2.5 ',
-                {
-                  'bg-gradient-to-r': _ === 'home',
-                }
+            <div className={cn('capitalize relative')}>
+              {_ === 'home' && (
+                <div className='absolute w-full h-1 rounded-full -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
               )}
-            >
-              <Link className='bg-white pb-2' href={_}>
+              <Link className='' href={_}>
                 {_}
               </Link>
-            </h3>
+            </div>
           </li>
         ))}
       </ul>
@@ -63,7 +59,7 @@ const NavContent = () => {
 const NavContentMob = ({ setIsMenuOpen }: { setIsMenuOpen: Function }) => {
   return (
     <>
-      <ul className='absolute inset-x-0 flex flex-col font-medium items-start lg:hidden'>
+      <ul className='absolute inset-x-0 flex flex-col items-start font-medium lg:hidden'>
         {nav.map((_) => (
           <li onClick={() => setIsMenuOpen(false)} key={_}>
             <h3 className='capitalize'>
@@ -82,7 +78,7 @@ const Action = () => {
   return (
     <div className='flex items-center bg-primary/5 cursor-pointer hover:bg-primary/10 transition-all px-3 gap-2.5 rounded-lg'>
       <Image src={`/assets/images/mail.svg`} alt='' width={20} height={20} />
-      <p className='text-foreground text-xs font-semibold'>Connect Wallet</p>
+      <p className='text-xs font-semibold text-foreground'>Connect Wallet</p>
       <div className='w-0.5 ml-4 h-10 bg-primary/50' />
       <Image src={`/assets/images/user.svg`} alt='' width={20} height={20} />
     </div>

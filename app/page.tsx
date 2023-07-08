@@ -11,7 +11,6 @@ export default function Home() {
       <Working />
       <Funding />
       <Creators />
-      <Footer />
     </main>
   );
 }
