@@ -3,19 +3,19 @@ import Image from 'next/image';
 export default function Creators() {
   return (
     <section>
-      <div className='flex flex-col w-fit mx-auto my-20 '>
+      <div className='flex flex-col mx-auto mt-20 mb-10 w-fit '>
         <div className='text-center text-sky-950 text-[25px] font-bold capitalize leading-10'>
           Trending Creators
         </div>
-        <div className='h-1 w-full bg-gradient-to-r from-primary via-primary/70 to-transparent rounded-full' />
+        <div className='w-full h-1 rounded-full bg-gradient-to-r from-primary via-primary/70 to-transparent' />
       </div>{' '}
-      <div className='flex justify-center md:justify-between gap-8 flex-wrap'>
+      <div className='flex flex-wrap justify-center gap-8 md:justify-between'>
         {data.map((_) => (
           <div key={_.title}>
             <Image
               src={_.photo}
               alt=''
-              className='rounded-full mb-3'
+              className='mb-3 rounded-full'
               width={85}
               height={85}
             />
