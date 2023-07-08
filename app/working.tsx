@@ -14,18 +14,18 @@ export default function Working() {
             'capitalize  from-primary via-primary/70 to-transparent text-sm pb-1 bg-gradient-to-r'
           )}
         >
-          <p className='bg-white pb-2'>For Creator</p>
+          <p className='pb-2 bg-white'>For Creator</p>
         </h3>
         <h3
           className={cn(
-            'capitalize  from-primary via-primary/70 to-transparent text-sm pb-1 bg-gradient-to-r'
+            'capitalize  from-primary via-primary/70 to-transparent text-sm pb-1  '
           )}
         >
-          <p className='bg-white pb-2'>For Creator</p>
+          <p className='pb-2 bg-white'>For Creator</p>
         </h3>
       </ul>
       {/* transition grid */}
-      <div className='flex justify-center my-20 gap-4'>
+      <div className='flex justify-center gap-4 my-20'>
         {data.map((_) => (
           <div key={_.title} className='max-w-xs'>
             <div className='flex gap-2'>
@@ -33,7 +33,7 @@ export default function Working() {
               {_.transitionIcon && (
                 <Image
                   src={_.transitionIcon}
-                  className='w-full grow mx-6 block'
+                  className='block w-full mx-6 grow'
                   alt=''
                   width={220}
                   height={60}

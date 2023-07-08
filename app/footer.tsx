@@ -54,11 +54,11 @@ export default function Footer() {
         >
           Signup for our newsletter to get the latest news in your inbox.
         </Link>
-        <div className='flex items-stretch overflow-hidden border rounded-lg border-black/5 w-fit '>
+        <form className='flex items-stretch overflow-hidden border rounded-lg border-black/5 w-fit '>
           <input
-            type='text'
+            type='email'
             placeholder='Info@yourgmail.com'
-            className='h-8 pl-3 '
+            className='h-8 pl-3 outline-none'
           />
           <button className='flex h-full px-2 bg-secondary '>
             <svg
@@ -76,7 +76,7 @@ export default function Footer() {
               />
             </svg>
           </button>
-        </div>
+        </form>
       </div>
     </section>
   );
