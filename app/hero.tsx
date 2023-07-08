@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className='grid items-center grid-cols-7 py-24 '>
-      <BlurryDiv className='right-0 -top-32' />
+      <BlurryDiv className='right-0 -top-24' />
       <BlurryDiv className='bottom-0 left-0' />
       <div className='relative col-span-3 space-y-10 duration-1000 animate-in slide-in-from-left-32 fade-in-0 max-md:col-span-full lg:pl-10 '>
         <h1 className='max-w-[344px]  text-[40px] font-bold'>
