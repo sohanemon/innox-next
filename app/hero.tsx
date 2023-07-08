@@ -63,6 +63,7 @@ export default function Hero() {
         src={`/assets/images/hero.svg`}
         alt=''
         width={280}
+        priority
         height={303}
       />
       <Image
@@ -70,6 +71,7 @@ export default function Hero() {
         src={`/assets/images/hero-alt.svg`}
         alt=''
         width={238}
+        priority
         height={283}
       />
     </section>
