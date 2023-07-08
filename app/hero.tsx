@@ -59,14 +59,14 @@ export default function Hero() {
         </div>
       </div>
       <Image
-        className='col-span-2 transition-all translate-x-20 select-none hover:drop-shadow-2xl duration-long '
+        className='col-span-2 transition-all duration-1000 translate-x-20 select-none hover:drop-shadow-2xl '
         src={`/assets/images/hero.svg`}
         alt=''
         width={238}
         height={283}
       />
       <Image
-        className='col-span-2 transition-all translate-x-20 select-none hover:drop-shadow-2xl duration-long '
+        className='col-span-2 transition-all duration-1000 translate-x-20 select-none hover:drop-shadow-2xl '
         src={`/assets/images/hero-alt.svg`}
         alt=''
         width={238}

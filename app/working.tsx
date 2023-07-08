@@ -11,17 +11,17 @@ export default function Working() {
       <ul className='flex justify-center gap-10 my-4'>
         <h3
           className={cn(
-            'capitalize  from-primary via-primary/70 to-transparent text-sm pb-1 bg-gradient-to-r'
+            'capitalize  from-primary cursor-progress via-primary/70 to-transparent text-sm pb-1 bg-gradient-to-r'
           )}
         >
           <p className='pb-2 bg-white'>For Creator</p>
         </h3>
         <h3
           className={cn(
-            'capitalize  from-primary via-primary/70 to-transparent text-sm pb-1  '
+            'capitalize  from-primary cursor-progress via-primary/70 to-transparent text-sm pb-1  '
           )}
         >
-          <p className='pb-2 bg-white'>For Creator</p>
+          <p className='pb-2 bg-white'>For Users</p>
         </h3>
       </ul>
       {/* transition grid */}
