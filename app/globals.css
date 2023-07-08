@@ -4,8 +4,10 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
   }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 215 33% 26%;
