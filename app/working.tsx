@@ -121,13 +121,7 @@ const data = [
     icon: '/assets/images/transition/verify.svg',
     transitionIcon: '/assets/images/dash-down.svg',
     title: 'Create an Account ',
-    node: (
-      <>
-        Verify your channel exists within our ecosystem so we can{' '}
-        <span className='text-sky-600 '>issue the valuation </span>
-        of your token{' '}
-      </>
-    ),
+    node: <>Create an account as a &quot;user&quot;</>,
   },
   {
     icon: '/assets/images/transition/mail.svg',
@@ -135,8 +129,9 @@ const data = [
     title: 'Create Wallet',
     node: (
       <>
-        Create an account as a “content creator” by{' '}
-        <span className='text-sky-600 '>connecting your wallet</span>
+        Connect your wallet with the platform.{' '}
+        <span className='text-sky-600 '>Add funds</span> if needed through
+        metamask or credit card.
       </>
     ),
   },
@@ -146,9 +141,8 @@ const data = [
     title: 'Start Investing',
     node: (
       <>
-        When you are ready to publish your token{' '}
-        <span className='text-sky-600 '>publish to marketplace</span> and share
-        with your audience.
+        Start <span className='text-sky-600 '>investing</span>
+        in your favorite content creators.{' '}
       </>
     ),
   },
