@@ -141,8 +141,8 @@ const data = [
     title: 'Start Investing',
     node: (
       <>
-        Start <span className='text-sky-600 '>investing</span>
-        in your favorite content creators.{' '}
+        Start <span className='text-sky-600 '>investing</span> in your favorite
+        content creators.
       </>
     ),
   },
